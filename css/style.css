@@ -1,0 +1,28 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    text-align: center;
+    padding: 200px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 30px;
+    padding: 5px 0;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fa5269;
+    padding-top: 100px;
+}

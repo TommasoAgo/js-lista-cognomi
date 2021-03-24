@@ -18,22 +18,35 @@ arrayCognomi.push(cognomeUtente);
 arrayCognomi.sort();
 
 // Ciclo For
-var listaCognomi = "";
-
-for ( var i = 0; i < arrayCognomi.length; i++ ) {
-    listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
-}
-
-document.getElementById('lista-cognomi').innerHTML = listaCognomi;
-
-// Ciclo While
 // var listaCognomi = "";
+// var posizioneUtente = 0;
 
-// var i = 0;
-// while ( i < arrayCognomi.length ) {
+// for ( var i = 0; i < arrayCognomi.length; i++ ) {
 //     listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
 
-//     i++;
+//     if ( arrayCognomi[i] == cognomeUtente ) {
+//         posizioneUtente = i + 1;
+//     }
+
 // }
 
+// document.getElementById('numero-utente').innerHTML = posizioneUtente;
 // document.getElementById('lista-cognomi').innerHTML = listaCognomi;
+
+// Ciclo While
+var listaCognomi = "";
+
+var i = 0;
+while ( i < arrayCognomi.length ) {
+    listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
+
+if ( arrayCognomi[i] == cognomeUtente ) {
+    posizioneUtente = i + 1;
+}
+
+    i++;
+}
+
+document.getElementById('numero-utente').innerHTML = "La tua posizione è: " + posizioneUtente;
+document.getElementById('lista-cognomi').innerHTML = listaCognomi;
+

@@ -17,4 +17,7 @@ arrayCognomi.push(cognomeUtente);
 // Ordino i cognomi in ordine alfabetico
 arrayCognomi.sort();
 
-console.log(arrayCognomi)
+// Ciclo For
+for ( var i = 0; i < arrayCognomi.length; i++ ) {
+    console.log(arrayCognomi[i] + " " + parseInt(i + 1));
+}

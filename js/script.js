@@ -18,14 +18,22 @@ arrayCognomi.push(cognomeUtente);
 arrayCognomi.sort();
 
 // Ciclo For
-// for ( var i = 0; i < arrayCognomi.length; i++ ) {
-//     console.log(arrayCognomi[i] + " " + parseInt(i + 1));
-// }
+var listaCognomi = "";
+
+for ( var i = 0; i < arrayCognomi.length; i++ ) {
+    listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
+}
+
+document.getElementById('lista-cognomi').innerHTML = listaCognomi;
 
 // Ciclo While
-var i = 0;
-while ( i < arrayCognomi.length ) {
-    console.log(parseInt(i + 1) + " " + arrayCognomi[i]);
+// var listaCognomi = "";
 
-    i++;
-}
+// var i = 0;
+// while ( i < arrayCognomi.length ) {
+//     listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
+
+//     i++;
+// }
+
+// document.getElementById('lista-cognomi').innerHTML = listaCognomi;

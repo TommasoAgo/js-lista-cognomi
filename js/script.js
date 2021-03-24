@@ -18,6 +18,14 @@ arrayCognomi.push(cognomeUtente);
 arrayCognomi.sort();
 
 // Ciclo For
-for ( var i = 0; i < arrayCognomi.length; i++ ) {
-    console.log(arrayCognomi[i] + " " + parseInt(i + 1));
+// for ( var i = 0; i < arrayCognomi.length; i++ ) {
+//     console.log(arrayCognomi[i] + " " + parseInt(i + 1));
+// }
+
+// Ciclo While
+var i = 0;
+while ( i < arrayCognomi.length ) {
+    console.log(parseInt(i + 1) + " " + arrayCognomi[i]);
+
+    i++;
 }

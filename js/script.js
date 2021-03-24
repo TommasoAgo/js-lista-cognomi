@@ -18,35 +18,35 @@ arrayCognomi.push(cognomeUtente);
 arrayCognomi.sort();
 
 // Ciclo For
-// var listaCognomi = "";
-// var posizioneUtente = 0;
-
-// for ( var i = 0; i < arrayCognomi.length; i++ ) {
-//     listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
-
-//     if ( arrayCognomi[i] == cognomeUtente ) {
-//         posizioneUtente = i + 1;
-//     }
-
-// }
-
-// document.getElementById('numero-utente').innerHTML = posizioneUtente;
-// document.getElementById('lista-cognomi').innerHTML = listaCognomi;
-
-// Ciclo While
 var listaCognomi = "";
+var posizioneUtente = 0;
 
-var i = 0;
-while ( i < arrayCognomi.length ) {
-    listaCognomi += "<li>" + parseInt(i + 1) + " " + arrayCognomi[i] + "</li>";
+for ( var i = 0; i < arrayCognomi.length; i++ ) {
+    listaCognomi += "<li>" + (i + 1) + " " + arrayCognomi[i] + "</li>";
 
-if ( arrayCognomi[i] == cognomeUtente ) {
-    posizioneUtente = i + 1;
-}
+    if ( arrayCognomi[i] == cognomeUtente ) {
+        posizioneUtente = (i + 1);
+    }
 
-    i++;
 }
 
 document.getElementById('numero-utente').innerHTML = "La tua posizione è: " + posizioneUtente;
 document.getElementById('lista-cognomi').innerHTML = listaCognomi;
+
+// Ciclo While
+// var listaCognomi = "";
+
+// var i = 0;
+// while ( i < arrayCognomi.length ) {
+//     listaCognomi += "<li>" + (i + 1) + " " + arrayCognomi[i] + "</li>";
+
+// if ( arrayCognomi[i] == cognomeUtente ) {
+//     posizioneUtente = (i + 1);
+// }
+
+//     i++;
+// }
+
+// document.getElementById('numero-utente').innerHTML = "La tua posizione è: " + posizioneUtente;
+// document.getElementById('lista-cognomi').innerHTML = listaCognomi;
 
